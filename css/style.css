@@ -1,0 +1,158 @@
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  /* 2. Remove default margin */
+  * {
+    margin: 0;
+  }
+  
+  body {
+    /* 3. Add accessible line-height */
+    line-height: 1.5;
+    /* 4. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+    font-family: "karla", sans-serif;
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* 5. Improve media defaults */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  /* 6. Inherit fonts for form controls */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+  /* 7. Avoid text overflows */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  
+  /* 8. Improve line wrapping */
+  p {
+    text-wrap: pretty;
+  }
+  
+  /*
+    9. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+
+  .white {
+    background-color: #fff;
+    padding: 35px;
+  }
+
+  .Light_Gray {
+    background-color: hsl(179, 62%, 43%);
+    padding: 35px;
+    color: #fff;
+  }
+  
+  .Grayish_Blue{
+    background-color: hsla(179, 62%, 43%, 0.671);
+    padding: 35px;
+  }
+
+  .heading {
+    font-size: 1.5rem;
+    color: hsl(179, 62%, 43%);
+    margin-bottom: 20px;
+  }
+
+  .sub-heading {
+    font-size: 1.1rem;
+    color: hsl(71, 73%, 54%);
+    margin-bottom: 20px;
+  }
+
+  .text{
+    line-height: 1.5rem;
+    color: #fff;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+  }
+
+  .gray{
+    color:hsl(218, 22%, 67%);
+  }
+
+  .subscription__heading{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  .price{
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+
+  .price span{
+    font-size: 1.5rem;
+    color: hsl(204, 43%, 93%)
+  }
+
+  .btn{
+    background-color: hsl(71, 73%, 54%);
+    border: none;
+    color: #fff;
+    padding: 15px;
+    font-weight: bold;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+  }
+
+    .btn:hover{
+        background-color: transparent;
+        border: 2px solid hsl(71, 73%, 54%);
+        color: #fff;
+        transition: all 0.3s ease;
+    }
+
+ .why__heading{
+    color: #fff;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+ .paragraph{
+    color:hsl(204, 43%, 93%);
+
+ }
+
+ ul{
+    list-style: none;
+    padding: 0;
+    color: #fff;
+ }
+
+ @media screen and (min-width: 768px){
+
+    .card {
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    .flex {
+        display: flex;
+    }
+
+    .sub_card, .why_card{
+        width: 50%
+    }
+
+    
+ }
+
+
+
+
